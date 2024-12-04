@@ -14,4 +14,67 @@
             </div>
         </div>
     </div>
+
+    <div class="py-12">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+                <form method="POST" action="{{ route('jumbotron.upload') }}" enctype='multipart/form-data'>
+                    @csrf
+                
+                    <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+                        <div class="p-6 text-gray-900 dark:text-gray-100">
+                            <div class="col-span-full">
+                                <label for="jumbotron_img" class="block text-sm/6 font-medium dark:text-gray-100">Jumbotron Image</label>
+                                <input
+                                    type="file"
+                                    className="text-sm text-black-500
+                                    file:mr-5 file:py-1 file:px-3 file:border-[1px]
+                                    file:text-xs file:font-medium
+                                    file:bg-stone-50 file:text-black-700
+                                    hover:file:cursor-pointer hover:file:bg-blue-50
+                                    hover:file:text-blue-700 text-black-900"
+                                    name="jumbotron_img"
+                                />
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+                        <div class="p-6 text-gray-900 dark:text-gray-100">
+                            <div class="col-span-full">
+                                <label for="jumbotron_headline" class="block text-sm/6 font-medium dark:text-gray-100">Jumbotron headline</label>
+                                <input
+                                    type="text"
+                                    class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline placeholder:text-gray-400"
+                                    name="jumbotron_headline"
+                                    value=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+                        <div class="p-6 text-gray-900 dark:text-gray-100">
+                            <div class="col-span-full">
+                                <label for="jumbotron_caption" class="block text-sm/6 font-medium dark:text-gray-100">Jumbotron caption</label>
+                                <input
+                                    type="text"
+                                    class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline placeholder:text-gray-400"
+                                    name="jumbotron_caption"
+                                    value=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <button type="submit" class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow">Save</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+
+
 </x-app-layout>

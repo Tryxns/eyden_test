@@ -7,6 +7,7 @@ export default {
         './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
+        "./node_modules/flowbite/**/*.js"
     ],
 
     theme: {
@@ -14,8 +15,15 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+            backgroundImage: {
+                'jumbotron': "url('/jumbotron/1733260299_travel2.jpg')",
+            },
+            safelist: [
+                {
+                    pattern: /bg-[url(*)]/,
+                },
+            ]
         },
     },
-
     plugins: [forms],
 };
