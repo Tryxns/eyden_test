@@ -1,0 +1,1 @@
+1. Text & gambar yg bisa dibuat dinamis adalah yg terletak di area jumbotron
