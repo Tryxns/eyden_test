@@ -1,1 +1,1 @@
-1. Text & gambar yg bisa dibuat dinamis adalah yg terletak di area jumbotron
+1. Text & gambar yg bisa dibuat dinamis adalah yg terlihat di layout yg diberikan (jumbotron & benefit section)
