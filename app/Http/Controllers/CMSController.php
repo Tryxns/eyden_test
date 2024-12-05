@@ -33,7 +33,7 @@ class CMSController extends Controller
         // dd($request->jumbotron_headline);
         if ($request->hasFile('jumbotron_img')){
             $request->validate([
-                'jumbotron_img' => 'required|file',
+                'jumbotron_img' => ['image','mimes:jpg,png,jpeg,gif','dimensions:min_width=1000,min_height=100'],
             ]);
             $file = $request->file('jumbotron_img');
             $fileName = $file->getClientOriginalName();
