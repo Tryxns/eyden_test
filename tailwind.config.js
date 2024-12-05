@@ -29,4 +29,5 @@ export default {
         forms,
         require('flowbite-typography')({ wysiwyg: true}),
     ],
+    darkMode: 'class',
 };
