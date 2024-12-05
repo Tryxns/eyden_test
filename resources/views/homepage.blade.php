@@ -44,10 +44,14 @@
             <section class="bg-cover bg-center bg-no-repeat" style="background-image: url({{ $jumbotron_img }})">
                 <div class="px-4 ml-8 max-w-screen-xl text-center py-10 lg:pt-56 ">
                     <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl text-left">
-                        {{$jumbotron_caption}}
+                    @isset($jumbotron_caption)
+                        {!!$jumbotron_caption!!}
+                    @endisset
                     </p>
                     <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl text-left grid grid-cols-3">
-                        {{$jumbotron_headline}}
+                    @isset($jumbotron_headline)
+                        {!!$jumbotron_headline!!}
+                    @endisset    
                     </h1>                    
                 </div>
 
@@ -120,24 +124,44 @@
 
             <div class="grid grid-cols-4 py-24">
                 <div class="px-8 mx-8">
+                @if (isset($benefit_title))
+                    {!!$benefit_title!!}
+                @else
                     <p class="font-bold text-orange-400">WHAT WE SERVE</p>
                     <h4 class="font-bold text-3xl">TOP VALUES FOR YOU</h4>
                     <p class="mt-4">Try a variety benefits when using our service</p>
+                @endif
                 </div>
+
                 <div class="px-8 mx-8">
+                @if (isset($benefit_one))
+                    {!!$benefit_one!!}
+                @else
                     <img class="h-20 max-w-xs" src="/icons/planet-earth_921490.png" alt="image description">
                     <h4 class="font-bold py-4">Lots of choice</h4>
                     <p>Total 460++ destinations that we work with</p>
+                @endif
                 </div>
+
                 <div class="px-8 mx-8 pt-16">
+                @if (isset($benefit_two))
+                    {!!$benefit_two!!}
+                @else
                     <img class="h-20 max-w-xs" src="/icons/suitcase.png" alt="image description">
                     <h4 class="font-bold py-4">Best Tour Guide</h4>
-                    <p>Our Tour Guide with 15+ years of experience</p>   
+                    <p>Our Tour Guide with 15+ years of experience</p>  
+                @endif
+ 
                 </div>
                 <div class="px-8 mx-8">
+                @if (isset($benefit_three))
+                    {!!$benefit_three!!}
+                @else
                     <img class="h-20 max-w-xs" src="/icons/ticket.png" alt="image description">
                     <h4 class="font-bold py-4">Easy Booking</h4>
                     <p>With an easy and fast ticket purchase process</p>
+                @endif
+
                 </div>
             </div>
 

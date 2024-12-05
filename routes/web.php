@@ -11,6 +11,7 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::post('/jumbotron-upload', [CMSController::class, 'set_jumbotron'])->name('jumbotron.upload');
+Route::post('/benefit-update', [CMSController::class, 'update_benefit'])->name('update.benefit');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
