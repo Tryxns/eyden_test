@@ -278,7 +278,7 @@ CREATE TABLE `sessions` (
 
 LOCK TABLES `sessions` WRITE;
 /*!40000 ALTER TABLE `sessions` DISABLE KEYS */;
-INSERT INTO `sessions` VALUES ('vIrKFZ7MquPKdMwtRt9RKOL0bo6bSTCVmcSvFEgZ',1,'127.0.0.1','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0','YTo1OntzOjY6Il90b2tlbiI7czo0MDoibXgzWVdiQ3l2RWVKQTdiTjFJdVFVZGRSUTJtWDRlR2FzMldyRUh1SSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMCI7fXM6MzoidXJsIjthOjA6e31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO30=',1733348977);
+INSERT INTO `sessions` VALUES ('QOzY6zpKSPAJH4SpTEuKdVTesw1P7wXaHYy6GpI5',1,'127.0.0.1','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0','YTo1OntzOjY6Il90b2tlbiI7czo0MDoia01vdWpDRVZaeHM4NjBIUnEycktZcEtGaVhOcG9JRG03aFRBVE5oUiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6MzoidXJsIjthOjA6e31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO30=',1733429099);
 /*!40000 ALTER TABLE `sessions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -293,7 +293,7 @@ CREATE TABLE `text_type` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `type` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -302,7 +302,7 @@ CREATE TABLE `text_type` (
 
 LOCK TABLES `text_type` WRITE;
 /*!40000 ALTER TABLE `text_type` DISABLE KEYS */;
-INSERT INTO `text_type` VALUES (1,'jumbotron_headline'),(2,'jumbotron_caption');
+INSERT INTO `text_type` VALUES (1,'jumbotron_headline'),(2,'jumbotron_caption'),(3,'benefit_title'),(4,'benefit_one'),(5,'benefit_two'),(6,'benefit_three');
 /*!40000 ALTER TABLE `text_type` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -320,7 +320,7 @@ CREATE TABLE `texts` (
   `updated_at` datetime DEFAULT NULL,
   `created_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -387,7 +387,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'eyden','eyden@eyden.com',NULL,'$2y$12$GhPUUBDCwuZz1gZfSxmZOu7bE5Uh7YKIDnUWdfZu9IQb9GcOg3k42','Z80KAH3Qldmd4hLgCBNKIEVcso9IVXZMhNaChcgigw0BCjN9YpTmNUFQoMwC','2024-12-03 02:09:27','2024-12-03 02:09:27');
+INSERT INTO `users` VALUES (1,'eyden','eyden@eyden.com',NULL,'$2y$12$GhPUUBDCwuZz1gZfSxmZOu7bE5Uh7YKIDnUWdfZu9IQb9GcOg3k42','pcPmAAoaEwm1lgsm0TNRcYBaRqfCr1DZJmlNYUFxpSEdWApbK7UNzGGvhNMG','2024-12-03 02:09:27','2024-12-03 02:09:27');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -404,4 +404,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-12-05  5:11:26
+-- Dump completed on 2024-12-06  3:26:01
