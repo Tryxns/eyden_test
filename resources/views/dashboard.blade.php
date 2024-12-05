@@ -14,7 +14,18 @@
             </div>
         </div>
     </div>
+    @session('success')
+        <div class="py-6">
+            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+                <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+                    <div class="alert alert-success p-6" role="alert"> 
+                        {{ $value }}
+                    </div>
+                </div>
+            </div>
+        </div>
 
+    @endsession
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">

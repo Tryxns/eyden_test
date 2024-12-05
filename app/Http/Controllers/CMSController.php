@@ -87,7 +87,7 @@ class CMSController extends Controller
             ]);
         }
 
-        return redirect()->back()->with('success', 'File uploaded successfully.');
+        return redirect()->back()->with('success', 'Data saved.');
     }
 
     function update_benefit(Request $request)
@@ -119,6 +119,6 @@ class CMSController extends Controller
                 "type" => 6,
             ]);
         }
-        return redirect()->back()->with('success', 'File uploaded successfully.');
+        return redirect()->back()->with('success', 'Data saved.');
     }
 }
